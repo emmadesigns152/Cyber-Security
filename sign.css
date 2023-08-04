@@ -13,22 +13,23 @@ body {
  justify-content: center;
  align-items: center;
  min-height: 100vh;
-   background: url(./AdobeStock_297628715.jpeg) no-repeat;
+   /* background: url(./AdobeStock_297628715.jpeg) no-repeat; */
  background-size: cover;
  background-position: center;
+ background-color: grey;
   /* background-color: skyblue; */
   /* background: linear-gradient(100deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.6) 100%), url(./AdobeStock_297628715.jpeg); */
    /* background: linear-gradient(-45deg, white, rgb(0, 0, 0), grey, gray); */
-   animation: animate 15s ease infinite;
+  
 }
 
 
 .Login-box {
  width: 420px;
- /* background: purple; */
- /* border: 2px solid white; */
- backdrop-filter: blur(50px);
- box-shadow: 0 0 10px grey;
+  /* background: purple; */ */
+  border: 2px solid white; 
+ /* backdrop-filter: blur(50px); */
+ box-shadow: 0 0 10px white;
  color: black;
  border-radius: 10px;
  padding: 30px 40px;
@@ -136,18 +137,20 @@ body {
 }
 
 
-@keyframes animate {
-  0% {
-    background-position: 0 50%;
-  }
 
-  50% {
-    background-position: 100% 50%;
-  }
+/* Media Queries */
 
-  100% {
-    background-position: 0 50%;
+/* For Phones */
+@media (max-width: 767px) {
+  .Login-box {
+    width: 90%;
+    padding: 20px;
   }
-
 }
 
+/* For Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Login-box {
+    width: 70%;
+  }
+}
