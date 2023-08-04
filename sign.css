@@ -1,0 +1,158 @@
+
+
+
+
+
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "poppins" sans-serif;
+ text-transform: capitalize;
+
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+   background: url(./AdobeStock_297628715.jpeg) no-repeat;
+ background-size: cover;
+ background-position: center;
+  /* background-color: skyblue; */
+  /* background: linear-gradient(100deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.6) 100%), url(./AdobeStock_297628715.jpeg); */
+   /* background: linear-gradient(-45deg, white, rgb(0, 0, 0), grey, gray); */
+   animation: animate 15s ease infinite;
+}
+
+
+.Login-box {
+ width: 420px;
+ /* background: purple; */
+ /* border: 2px solid white; */
+ backdrop-filter: blur(50px);
+ box-shadow: 0 0 10px grey;
+ color: black;
+ border-radius: 10px;
+ padding: 30px 40px;
+}
+
+
+.Login-box h3 {
+ font-size: 25px;
+ text-align: center;
+}
+
+.input-box {
+ width: 100%;
+ height: 50px;
+ margin: 30px 0;
+}
+
+.input-box input {
+ display: flex;
+ width: 100%;
+ height: 100%;
+ background: transparent;
+ border: none;
+ outline: none;
+ border-radius: 20px;
+ color: #332;
+ font-weight: 600;
+ padding: 1px 5px;
+ border: 2px solid black;
+}
+
+.input-box input::placeholder {
+ color: black;
+
+}
+
+.remember {
+ display: flex;
+ justify-content: space-between;
+ font-size: 14.5px;
+ margin: -15px 0 15px;
+}
+
+.remember label input {
+ accent-color: skyblue;
+ margin-right: 5px;
+}
+
+.remember a {
+ color: white;
+}
+
+.remember a:hover {
+ color: skyblue;
+}
+
+.register a {
+ color: white;
+ text-decoration: none;
+}
+
+.register a:hover {
+ text-decoration: underline;
+ color: skyblue;
+}
+
+.btn {
+ width: 100%;
+ height: 45px;
+ outline: none;
+ border-radius: 40px;
+ box-shadow: 10px 10px 10px rgba(255, 255, 255, .1);
+ cursor: pointer;
+ font-size: 16px;
+ color: #334;
+ font-weight: 600;
+
+}
+
+.btn:hover {
+ color: skyblue;
+}
+
+.account {
+ font-size: 14.5px;
+ text-align: center;
+ margin: 20px 0 15px;
+}
+
+
+.account p {
+  color: white;
+}
+
+.account p a {
+ color: white;
+ text-decoration: none;
+ font-weight: 600;
+}
+
+.account p a:hover {
+ text-decoration: underline;
+ color: skyblue;
+
+}
+
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+
+}
